@@ -5302,6 +5302,8 @@ export class Mesh extends Object3D {
 
     geometry: Geometry | BufferGeometry;
     material: Material | Material[];
+    customDepthMaterial: Material | undefined
+    customDistanceMaterial: Material | undefined
     drawMode: TrianglesDrawModes;
     morphTargetInfluences?: number[];
     morphTargetDictionary?: { [key: string]: number; };
